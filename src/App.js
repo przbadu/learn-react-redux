@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router';
+
 import logo from './logo.svg';
 import './App.css';
 
@@ -13,8 +15,12 @@ class App extends Component {
         <p className="App-intro">
           To get started, edit <code>src/App.js</code> and save to reload.
         </p>
-      </div>
 
+	<ul role="nav">
+	  <li><Link to="/about">About</Link></li>
+	  <li><Link to="/repos">Repos</Link></li>
+	</ul>
+      </div>
     );
   }
 }
