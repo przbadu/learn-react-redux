@@ -14,8 +14,13 @@ class App extends Component {
         </div>
 
 	<ul>
-	  <li><Link to="/about">About</Link></li>
-	  <li><Link to="/repos">Repos</Link></li>
+	  {/* using inline style */}
+	  {/* <li><Link to="/about" activeStyle={{color: 'red'}}>About</Link></li> */}
+	  {/* <li><Link to="/repos" activeStyle={{color: 'red'}}>Repos</Link></li> */}
+
+	  {/* using class */}
+	  <li><Link to="/about" activeClassName="active">About</Link></li>
+	  <li><Link to="/Repos" activeClassName="active">Repos</Link></li>
 	</ul>
 	
         {this.props.children}
