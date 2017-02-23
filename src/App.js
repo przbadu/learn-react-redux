@@ -1,8 +1,10 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router';
-
 import logo from './logo.svg';
 import './App.css';
+
+// components
+import NavLink from './components/NavLink';
 
 class App extends Component {
   render() {
@@ -19,8 +21,12 @@ class App extends Component {
 	  {/* <li><Link to="/repos" activeStyle={{color: 'red'}}>Repos</Link></li> */}
 
 	  {/* using class */}
-	  <li><Link to="/about" activeClassName="active">About</Link></li>
-	  <li><Link to="/Repos" activeClassName="active">Repos</Link></li>
+	  {/* <li><Link to="/about" activeClassName="active">About</Link></li> */}
+	  {/* <li><Link to="/Repos" activeClassName="active">Repos</Link></li> */}
+
+	  {/* using component */}
+	  <li><NavLink to="/about">About</NavLink></li>
+	  <li><NavLink to="/repos">Repos</NavLink></li>
 	</ul>
 	
         {this.props.children}
