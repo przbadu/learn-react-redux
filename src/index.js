@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { Router, Route, IndexRoute, hashHistory } from 'react-router';
+import { Router, Route, IndexRoute, browserHistory } from 'react-router';
 
 // css
 import './index.css';
@@ -13,7 +13,7 @@ import Repos from './Repos';
 import Repo from './Repo';
 
 const router = (
-  <Router history={hashHistory}>
+  <Router history={browserHistory}>
     <Route path="/"  component={App}>
       <IndexRoute component={Home}></IndexRoute>
       
