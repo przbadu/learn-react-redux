@@ -18,7 +18,6 @@ class App extends Component {
 	<ul>
 	  <li><NavLink to="/about">About</NavLink></li>
 	  <li><NavLink to="/repos">Repos</NavLink></li>
-	  <li><NavLink to="/repos/reactjs/react-router">React Router</NavLink></li>
 	</ul>
 	
         {this.props.children}
